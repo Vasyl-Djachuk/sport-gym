@@ -8,7 +8,7 @@
     
     <script type="module" crossorigin src="/sport-gym/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/sport-gym/assets/vendor-a2e8d7fa.js">
-    <link rel="stylesheet" href="/sport-gym/assets/index-063995cb.css">
+    <link rel="stylesheet" href="/sport-gym/assets/index-4a0d9c4c.css">
   </head>
   <body>
     <header class="header-page">
@@ -89,10 +89,10 @@
         height="272"
     /></picture>
     <svg class="quote-svg-men" width="34" height="32">
-      <use href="/sport-gym/assets/symbol-defs-990174b7.svg#icon-running-men"></use>
+      <use href="/sport-gym/assets/symbol-defs-98df751b.svg#icon-running-men"></use>
     </svg>
     <svg class="quote-svg-commas" width="28" height="28">
-      <use href="/sport-gym/assets/symbol-defs-990174b7.svg#icon-inverted-commas"></use>
+      <use href="/sport-gym/assets/symbol-defs-98df751b.svg#icon-inverted-commas"></use>
     </svg>
   </div>
 </section>
@@ -126,8 +126,8 @@
           ><input type="text" class="exercises-search-input"
         /></label>
       </form>
-      <ul class="exercises-list"></ul>
-      <ul class="exercises-list-pages"></ul>
+      <ul class="exercises-list" data-click=""></ul>
+      <ul class="exercises-list-pages" data-click=""></ul>
     </div>
   </div>
 </section>
@@ -143,6 +143,47 @@
             data-number=""
           ></button>
         </li> -->
+<li class="exer-card-item">
+  <div class="exer-card-background">
+    <div class="card-workout-wrapper">
+      <p class="exer-workout-text">WORKOUT</p>
+      <p class="exer-card-rating">${rating}</p>
+      <svg class="card-rating-svg" width="14" height="14">
+        <use href="/sport-gym/assets/symbol-defs-98df751b.svg#icon-star"></use>
+      </svg>
+      <button class="card-start-button">
+        Start
+        <svg class="card-arrow-svg" width="14" height="14">
+          <use href="/sport-gym/assets/symbol-defs-98df751b.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <p>
+      <span>
+        <svg class="card-runing-men-svg" width="24" height="24">
+          <use href="../img/symbol-defs.svg#icon-running-men"></use></svg
+        >${equipment}
+      </span>
+    </p>
+
+    <p class="card-burned-calories-text">
+      Burned calories:
+      <span class="card-burned-calories-span"
+        >${burnedCalories} /${time} min</span
+      >
+    </p>
+
+    <p class="card-body-part-text">
+      Body part:
+      <span class="card-body-part-span">${bodyPart}</span>
+    </p>
+    <p class="card-target-text">
+      Target:
+      <span class="card-target-text-span">${target}</span>
+    </p>
+  </div>
+</li>
+<div class="card-runing-men-wrapper"></div>
 
 
     
