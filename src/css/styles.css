@@ -4,9 +4,11 @@
   | default @import url()
   |============================
 */
+@import url('./modern-normalize.css');
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./qoute.css');
+@import url('./exercises.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
