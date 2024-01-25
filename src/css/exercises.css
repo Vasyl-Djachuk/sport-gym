@@ -93,3 +93,110 @@
   width: 32px;
   height: 32px;
 }
+/* ===============style for cards================== */
+.exer-card-background {
+  border-radius: 15px;
+  border: 1px solid rgba(246, 246, 246, 0.2);
+  background: #fff;
+  padding: 16px;
+}
+.exer-workout-text {
+  color: #f6f6f6;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 5px 8px;
+  border-radius: 15px;
+  background-color: #7e847f;
+  display: inline-block;
+}
+.card-workout-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.exer-card-rating {
+  color: #1b1b1b;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 16px;
+}
+.card-rating-svg {
+  fill: #eea10c;
+  margin-left: 4px;
+}
+.card-start-button {
+  border: none;
+  background-color: transparent;
+  color: #1b1b1b;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  margin-left: auto;
+}
+.card-arrow-svg {
+  stroke: #1b1b1b;
+}
+.card-runing-men-svg {
+  fill: #f6f6f6;
+  background-color: #7e847f;
+  border-radius: 50%;
+}
+.card-name-traning {
+  overflow: hidden;
+  color: #1b1b1b;
+  text-overflow: ellipsis;
+  font-family: 'DM Sans';
+  font-size: 20px;
+  line-height: 1.4;
+  width: 223px;
+  display: block;
+  white-space: nowrap;
+}
+.card-runing-men-wrapper {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.card-burned-calories-text {
+  color: rgba(27, 27, 27, 0.4);
+  font-family: 'DM Sans';
+  font-size: 12px;
+  line-height: 1.5;
+  display: inline-block;
+  margin-right: 16px;
+}
+.card-body-part-text {
+  color: rgba(27, 27, 27, 0.4);
+  font-family: 'DM Sans';
+  font-size: 12px;
+  line-height: 1.5;
+  display: inline-block;
+}
+.card-target-text {
+  color: rgba(27, 27, 27, 0.4);
+  font-family: 'DM Sans';
+  font-size: 12px;
+  line-height: 1.5;
+  display: inline-block;
+}
+.card-burned-calories-span {
+  color: #1b1b1b;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
