@@ -2,82 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/sport-gym/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/sport-gym/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/sport-gym/assets/vendor-a2e8d7fa.js">
+    <link rel="stylesheet" href="/sport-gym/assets/index-063995cb.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <header class="header-page">
+  <div class="container header-container">
+    <div class="header-background">
+      <div class="header-wrapper">
+        <nav class="header-nav">
+          <a href="../index.html" class="header-logo">energy.flow</a>
+        </nav>
+        <button class="burger-button">
+          <svg class="burger-svg" width="32" height="16">
+            <use
+              class="burger-svg-use"
+              href="../img/symbol-defs.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="header-list">
+        <li class="header-item">
+          <p class="header-list-text">#Sport</p>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="header-item">
+          <p class="header-list-text">#Healthy</p>
+        </li>
+        <li class="header-item">
+          <p class="header-list-text">#Workout</p>
+        </li>
+        <li class="header-item">
+          <p class="header-list-text">#Diet</p>
         </li>
       </ul>
     </div>
+    <div class="header-title-wrapper">
+      <h1 class="header-title">
+        Get <span class="header-title-span">Body</span> in shape, Stay healthy
+      </h1>
+      <p class="header-title-text">
+        Transform your physique and embrace a healthier lifestyle with our
+        comprehensive fitness and nutrition support.
+      </p>
+    </div>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
+    <section class="qoute-section">
+  <div class="container quote-container">
+    <div class="qoute-text-wrapper">
+      <h3 class="quote-title">Quote of the day</h3>
+
+      <p class="qoute-of-day-text">
+        A lot of times I find that people who are blessed with the most talent
+        don't ever develop that attitude, and the ones who aren't blessed in
+        that way are the most competitive and have the biggest heart.
+      </p>
+      <p class="quote-author">Tom Brady</p>
+    </div>
+    <picture class="quote-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="/sport-gym/assets/mobile-qoute-af97463b.jpg 1x, /sport-gym/assets/mobile-qoute@2x-d51bf5a3.jpg 2x"
+        type="image/jpg"
+        width="704"
+        height="302" />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="/sport-gym/assets/tablet-qoute-79f8ef45.jpg 1x, /sport-gym/assets/tablet-qoute@2x-be5f74ad.jpg 2x"
+        type="image/jpg"
+        width="736"
+        height="302" />
       <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+        class="quote-image"
+        srcset="/sport-gym/assets/mobile-qoute-af97463b.jpg 1x, /sport-gym/assets/mobile-qoute@2x-d51bf5a3.jpg 2x"
+        src="/sport-gym/assets/mobile-qoute-af97463b.jpg"
+        alt="girl's waist"
+        width="335"
+        height="272"
+    /></picture>
+    <svg class="quote-svg-men" width="34" height="32">
+      <use href="/sport-gym/assets/symbol-defs-990174b7.svg#icon-running-men"></use>
+    </svg>
+    <svg class="quote-svg-commas" width="28" height="28">
+      <use href="/sport-gym/assets/symbol-defs-990174b7.svg#icon-inverted-commas"></use>
+    </svg>
+  </div>
+</section>
+
+    <section class="exercises-section">
+  <div class="container">
+    <div class="exercises-container">
+      <h2 class="exercises-title">Exercises</h2>
+      <ul class="exercises-button-list">
+        <li class="exercises-button-item">
+          <button
+            class="exercises-button exercises-button-active"
+            data-name="Muscles"
+          >
+            Muscles
+          </button>
+        </li>
+        <li class="exercises-button-item">
+          <button class="exercises-button" data-name="Body parts">
+            Body parts
+          </button>
+        </li>
+        <li class="exercises-button-item">
+          <button class="exercises-button" data-name="Equipment">
+            Equipment
+          </button>
+        </li>
+      </ul>
+      <form action="#" class="exercises-form form-is-hiden">
+        <label class="exercises-label"
+          ><input type="text" class="exercises-search-input"
+        /></label>
+      </form>
+      <ul class="exercises-list"></ul>
+      <ul class="exercises-list-pages"></ul>
     </div>
   </div>
 </section>
+
+<!-- <li class="exercises-item" style="background-image: url()">
+          <p class="exercises-item-text"></p>
+          <p class="exercises-item-text-second"></p>
+        </li> -->
+
+<!-- <li>
+          <button
+            class="exercises-pages-button select-pages-ative"
+            data-number=""
+          ></button>
+        </li> -->
 
 
     
