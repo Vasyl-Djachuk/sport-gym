@@ -1,32 +1,48 @@
 <section class="exercises-section">
   <div class="container">
     <div class="exercises-container">
-      <h2 class="exercises-title">Exercises</h2>
-      <ul class="exercises-button-list">
-        <li class="exercises-button-item">
-          <button
-            class="exercises-button exercises-button-active"
-            data-name="Muscles"
-          >
-            Muscles
-          </button>
-        </li>
-        <li class="exercises-button-item">
-          <button class="exercises-button" data-name="Body parts">
-            Body parts
-          </button>
-        </li>
-        <li class="exercises-button-item">
-          <button class="exercises-button" data-name="Equipment">
-            Equipment
-          </button>
-        </li>
-      </ul>
-      <form action="#" class="exercises-form form-is-hiden">
-        <label class="exercises-label"
-          ><input type="text" class="exercises-search-input"
-        /></label>
-      </form>
+      <h2 class="exercises-title">
+        Exercises <span class="exercises-title-span"></span>
+      </h2>
+      <div class="exer-form-button-wrapper">
+        <ul class="exercises-button-list">
+          <li class="exercises-button-item">
+            <button
+              class="exercises-button exercises-button-active"
+              data-name="Muscles"
+            >
+              Muscles
+            </button>
+          </li>
+          <li class="exercises-button-item">
+            <button class="exercises-button" data-name="Body parts">
+              Body parts
+            </button>
+          </li>
+          <li class="exercises-button-item">
+            <button class="exercises-button" data-name="Equipment">
+              Equipment
+            </button>
+          </li>
+        </ul>
+
+        <form class="exercises-form form-is-hiden">
+          <div class="form-wrapper">
+            <label class="exercises-label"
+              ><input
+                name="usertext"
+                placeholder="Search"
+                type="text"
+                class="exercises-search-input"
+            /></label>
+            <button class="exer-form-button" type="submit">
+              <svg class="exercises-form-svg" width="18" height="18">
+                <use href="../img/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
       <ul class="exercises-list" data-click=""></ul>
       <ul class="exercises-list-pages" data-click=""></ul>
     </div>
@@ -44,7 +60,7 @@
             data-number=""
           ></button>
         </li> -->
-<li class="exer-card-item">
+<!-- <li class="exer-card-item">
   <div class="exer-card-background">
     <div class="card-workout-wrapper">
       <p class="exer-workout-text">WORKOUT</p>
@@ -84,4 +100,14 @@
     </p>
   </div>
 </li>
-<div class="card-runing-men-wrapper"></div>
+<div class="card-runing-men-wrapper"></div> -->
+<!-- <div class="no-results-wrapper">
+  <p class="no-results-message">
+    Unfortunately, <span class="no-results-messag-span">no results</span>no
+    results were found. You may want to consider other search options to find
+    the exercise you are looking for. Our range is wide and you have the
+    opportunity to find more options that suit your needs.
+  </p>
+</div> -->
+<span class="exer-title-slash"></span>
+<span></span>

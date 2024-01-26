@@ -25,9 +25,60 @@
 .exercises-button-list {
   display: flex;
   column-gap: 6px;
+}
+.exer-form-button-wrapper {
   margin-bottom: 40px;
 }
-.exercises-form {
+.form-is-open {
+  margin-bottom: 20px;
+}
+.form-wrapper {
+  position: relative;
+}
+/* .exercises-form {
+  margin-bottom: 40px;
+} */
+.exercises-label {
+  display: block;
+}
+.exercises-search-input {
+  outline: transparent;
+  height: 42px;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  border: none;
+  color: #1b1b1b;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29;
+  padding-left: 16px;
+  width: 100%;
+}
+.exercises-search-input::placeholder {
+  color: #1b1b1b;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29;
+}
+.exer-form-button {
+  border: none;
+  outline: transparent;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+}
+.exercises-form-svg {
+  fill: none;
+}
+.form-is-hiden {
   display: none;
 }
 .exercises-list {
@@ -143,6 +194,7 @@
   justify-content: center;
   column-gap: 8px;
   margin-left: auto;
+  padding: 0;
 }
 .card-arrow-svg {
   stroke: #1b1b1b;
@@ -199,4 +251,154 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+}
+/* ==================message */
+.no-results-wrapper {
+  padding-top: 124px;
+  padding-bottom: 320px;
+}
+.no-results-message {
+  color: #1b1b1b;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+}
+.no-results-messag-span {
+  color: #7e847f;
+  font-weight: 500;
+}
+.exercises-title-span {
+  color: rgba(27, 27, 27, 0.5);
+  font-family: 'DM Sans';
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.exer-title-slash {
+  color: #1b1b1b;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+@media screen and (min-width: 768px) {
+  .exer-title-slash {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.09;
+    letter-spacing: -0.02em;
+  }
+  .exercises-title {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.09;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+  .exercises-button {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 20px;
+  }
+  .exercises-button-list {
+    column-gap: 8px;
+  }
+  .exercises-list {
+    flex-direction: row;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .exercises-list {
+    font-size: 24px;
+  }
+  .exercises-item {
+    height: 250px;
+    width: 313px;
+  }
+  .exercises-pages-button {
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+  .exer-form-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    align-items: center;
+  }
+  .exercises-container {
+    padding: 64px 48px;
+  }
+  .form-is-open {
+    margin-bottom: 0;
+  }
+  .exercises-search-input {
+    height: 48px;
+    width: 246px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .exercises-title-span {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+  .exer-card-background {
+    width: 313px;
+  }
+  .card-start-button {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .card-arrow-svg {
+    width: 16px;
+    height: 16px;
+  }
+  .card-name-traning {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+  .card-runing-men-wrapper {
+    margin-bottom: 8px;
+  }
+  .card-body-part-text {
+    margin-right: 16px;
+  }
+  .no-results-wrapper {
+    padding: 222px 100px 584px;
+  }
+  .no-results-message {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .exercises-list {
+    gap: 40px 20px;
+  }
+  .exercises-item-text {
+    font-size: 24px;
+  }
+  .exercises-item-text-second {
+  }
+  .exercises-search-input {
+    width: 273px;
+  }
+  .exer-card-background {
+    width: 424px;
+  }
+  .card-burned-calories-text {
+    margin-right: 10px;
+  }
+  .card-body-part-text {
+    margin-right: 10px;
+  }
+  .exer-card-background {
+    padding: 16px 14px;
+  }
+  .no-results-wrapper {
+    padding: 217px 362px 350px;
+  }
 }
